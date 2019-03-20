@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/cookieTools.js"></script>
+	</head>
+	
+	<body>
+		<div class="listMenu">
+			<ul class="listMenuUl">
+				<li><a href="">收信箱</a></li>
+				<li><a href="">订单</a></li>
+				<li><a href="">心愿单</a></li>
+				<li><a href="">活动</a></li>
+				<li><a href="">账户设置</a></li>
+				<li><a href="">注销</a></li>
+			</ul>
+		</div>
+		<div id="bgColor" class="bgColor"></div>
+		<div id="login" class="login">
+			<div id="quit" class="quit"></div>
+			<span class="errorSpan">您输入的电话号码或密码不正确</span>
+			<div id="userInput" class="userInput">
+				<div id="loginDiv" class="loginDiv">
+					<input id="userNum" class="userNum" type="text" placeholder="手机号码"/>
+					<span class="userInputSpan">+86</span>
+				</div>
+				<span id="loginSpan" class="loginSpan">请输入有效的手机号码</span>
+				<input id="userPaw" class="userPaw" type="password" placeholder="密码(4~16位)"/>
+				<span id="tipSpan" class="tipSpan">请输入密码。</span>
+				<span class="emailSpan">使用电子邮箱登录</span>
+			</div>
+			<div class="entry">
+				<input class="saveEntry" type="checkbox" checked="checked"/>
+				<span class="saveEntrySpan">保存登录状态</span>
+				<a class="pawForget" href="#">忘记密码?</a>
+			</div>
+			<div class="condition">
+				一旦登录，即表明你同意 Nike的<a href="#"> 隐私政策 </a>和<a href="#"> 使用条款</a>。 
+			</div>
+			<a id="btnLogin" class="btnLogin" href="#">登录</a>
+			<div class="vip">
+				还不是会员？ <a id="enroll" href="#">立即加入。</a>
+			</div>
+		</div>
+		<div id="register" class="register">
+			<div id="registerQuit" class="quit"></div>
+			<div class="sendMassage">
+				我们需要验证您的号码以继续操作。我们将通过短信向您发送一条一次性的验证码。
+			</div>
+			<div class="registerInput">
+				<img class="registerInputImg" src="img/12.png"/>
+				<input id="registerUserNum" name="username" class="userNum" type="text" placeholder="手机号码"/>
+				<span class="userInputSpan userPawSpan">+86</span>
+				<div class="registerPawDiv">
+					<input id="registerUserPaw" name="password" class="userPaw pawInput" type="password" placeholder="密码(4~16位)"/>
+					<select class="country">
+						<option>中国</option>
+						<option>美国</option>
+						<option>阿富汗</option>
+						<option>牙买加</option>
+						<option>印度</option>
+						<option>英国</option>
+						<option>中国澳门</option>
+						<option>中国台湾</option>
+						<option>菲律宾</option>
+						<option>阿富汗</option>
+						<option>约旦</option>
+					</select>
+				</div>
+			</div>
+			<a id="btnRegister" class="btnRegister" href="#">注册</a>
+			<div class="vipRegister">
+				已经是会员？ <a id="vipRegisterLogin" href="#">立即登录。</a>
+			</div>
+		</div>
+		
+		<header>
+			<div id="" class="headerTop">
+				<a href="#" class="NikePlus">NikePlus</a>
+				<a href="#" class="NikePlusImg"><i class="iconfont icon-zhinengxuanxie_qiaodan"></i></a>
+				<a href="#" class="NikePlusTop">CONVERSE</a>
+				<ul class="headerUl">
+					<li class="headerUlLi">
+						<span id="accountNumber" class="">加入/登录NikePlus账号</span>
+						<span>帮助</span>
+						<span><i class="iconfont icon-liuyan"></i></span>
+						<span><i class="iconfont icon-guoqi"></i></span>
+					</li>
+				</ul>
+			</div>
+			<div id="" class="headerBottom">
+				<span id="" class="icon"><a href="#"><i class="iconfont icon-naike"></i></a></span>
+				<ul class="headerBottomUl" id="headerBottomUl">
+					<li id="headerBottomUlLi">
+						<a id="headerBottomUlLiBoy" href="">
+							男子
+							<div class="headerBottomUlBoyMenu" id="headerBottomUlBoyMenu">
+								<ul id="headerBottomUlBoyLeftMenu" class="headerBottomUlBoyLeftMenu">
+									<li>最新上市</li>
+									<li>SNKRS新品预览</li>
+									<li>当季IN货</li>
+									<li>折扣优惠</li>
+									<li>企业团购</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuFirstLine"></div>
+								<ul class="headerBottomUlBoyCenFirstMenu">
+									<li>所有鞋类</li>
+									<li>休闲</li>
+									<li>跑鞋</li>
+									<li>篮球</li>
+									<li>足球</li>
+									<li>健身/训练</li>
+									<li>Jordan</li>
+									<li>React</li>
+									<li>Air Force1</li>
+									<li>Air Max</li>
+									<li>NIKEID专属定制</li>
+								</ul>
+								<ul class="headerBottomUlBoyCenSecondMenu">
+									<li>所有服饰</li>
+									<li>连帽衫/套头衫</li>
+									<li>外套/夹克</li>
+									<li>休闲裤</li>
+									<li>上衣/T恤</li>
+									<li>短裤</li>
+									<li>运动紧身衣</li>
+									<li>运动裤/紧身裤</li>
+									<li>袜子</li>
+									<li>配件/装备</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuSecondLine"></div>
+								<ul class="headerBottomUlBoySportFirstMenu">
+									<li>运动</li>
+									<li>跑步</li>
+									<li>足球</li>
+									<li>健身/训练</li>
+									<li>滑板</li>
+									<li>网球</li>
+									<li>高尔夫</li>
+								</ul>
+								<ul class="headerBottomUlBoySportSecondMenu">
+									<li>品牌</li>
+									<li>JORDAN</li>
+									<li>NBA</li>
+									<li>NikeLab</li>
+									<li>Nike Sportswear</li>
+									<li>ACG</li>
+									<li>NIKEiD专属定制</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							女子
+							<div class="headerBottomUlBoyMenu">
+								<ul class="headerBottomUlBoyLeftMenu">
+									<li>最新上市</li>
+									<li>SNKRS新品预览</li>
+									<li>当季IN货</li>
+									<li>折扣优惠</li>
+									<li>企业团购</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuFirstLine"></div>
+								<ul class="headerBottomUlBoyCenFirstMenu">
+									<li>所有鞋类</li>
+									<li>休闲</li>
+									<li>跑鞋</li>
+									<li>健身/训练</li>
+									<li>滑板</li>
+									<li>Jordan</li>
+									<li>React</li>
+									<li>Air Force1</li>
+									<li>Air Max</li>
+									<li>NIKEID专属定制</li>
+								</ul>
+								<ul class="headerBottomUlBoyCenSecondMenu">
+									<li>所有服饰</li>
+									<li>连帽衫/卫衣</li>
+									<li>外套/夹克</li>
+									<li>上衣/T恤</li>
+									<li>运动内衣</li>
+									<li>运动裤/紧身裤</li>
+									<li>休闲裤</li>
+									<li>短裙/连衣裙</li>
+									<li>运动紧身衣</li>
+									<li>袜</li>
+									<li>配件/装备</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuSecondLine"></div>
+								<ul class="headerBottomUlBoySportFirstMenu">
+									<li>运动</li>
+									<li>跑步</li>
+									<li>健身/训练</li>
+									<li>瑜伽</li>
+									<li>滑板</li>
+									<li>网球</li>
+									<li>高尔夫</li>
+								</ul>
+								<ul class="headerBottomUlBoySportSecondMenu">
+									<li>品牌</li>
+									<li>JORDAN</li>
+									<li>NBA</li>
+									<li>NikeLab</li>
+									<li>Nike Sportswear</li>
+									<li>ACG</li>
+									<li>NIKEiD专属定制</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							男孩
+							<div class="headerBottomUlBoyMenu">
+								<ul class="headerBottomUlBoyLeftMenu">
+									<li>所有男孩商品</li>
+									<li>最新上市</li>
+									<li>冬季装备精选</li>
+									<li>穿脱自如儿童鞋系列</li>
+									<li>折扣优惠</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuFirstLine"></div>
+								<ul class="headerBottomUlBoyCenFirstMenu">
+									<li>所有鞋类</li>
+									<li>婴童(17-27欧码)</li>
+									<li>幼童(27.5-35欧码)</li>
+									<li>大童(35.5-40欧码)</li>
+								</ul>
+								<ul class="headerBottomUlBoyCenSecondMenu">
+									<li>所有服饰</li>
+									<li>婴童(0~3岁)</li>
+									<li>幼童(4~6岁)</li>
+									<li>大童(7岁及以上)</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuSecondLine"></div>
+								<ul class="headerBottomUlBoySportFirstMenu">
+									<li>品牌</li>
+									<li>Nike Sportswear</li>
+									<li>JORDAN</li>
+									<li>运动</li>
+									<li>篮球</li>
+									<li>跑鞋</li>
+									<li>足球</li>
+									<li>健身/训练</li>
+								</ul>
+								<ul class="headerBottomUlBoySportSecondMenu">
+									<li>主推鞋款</li>
+									<li>DYNAMO系列</li>
+									<li>AIR FORCE1 系列</li>
+									<li>AIR MAX系列</li>
+									<li>HUARACHE系列</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							女孩
+							<div class="headerBottomUlBoyMenu">
+								<ul class="headerBottomUlBoyLeftMenu">
+									<li>所有女孩商品</li>
+									<li>最新上市</li>
+									<li>冬季装备精选</li>
+									<li>穿脱自如儿童鞋系列</li>
+									<li>折扣优惠</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuFirstLine"></div>
+								<ul class="headerBottomUlBoyCenFirstMenu">
+									<li>所有鞋类</li>
+									<li>婴童(17-27欧码)</li>
+									<li>幼童(27.5-35欧码)</li>
+									<li>大童(35.5-40欧码)</li>
+								</ul>
+								<ul class="headerBottomUlBoyCenSecondMenu">
+									<li>所有服饰</li>
+									<li>婴童(0~3岁)</li>
+									<li>幼童(4~6岁)</li>
+									<li>大童(7岁及以上)</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuSecondLine"></div>
+								<ul class="headerBottomUlBoySportFirstMenu">
+									<li>品牌</li>
+									<li>Nike Sportswear</li>
+									<li>JORDAN</li>
+									<li>运动</li>
+									<li>篮球</li>
+									<li>跑鞋</li>
+									<li>足球</li>
+									<li>健身/训练</li>
+								</ul>
+								<ul class="headerBottomUlBoySportSecondMenu">
+									<li>主推鞋款</li>
+									<li>DYNAMO系列</li>
+									<li>AIR FORCE1 系列</li>
+									<li>AIR MAX系列</li>
+									<li>HUARACHE系列</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							NIKEID专属定制
+							<div class="headerBottomUlBoyMenu">
+								<ul class="headerBottomUlBoyLeftMenu">
+									<li>篮球战靴系列定制</li>
+									<li>球员设计系列定制</li>
+									<li>NBA系列定制</li>
+									<li>Pendleton羊毛系列定制</li>
+									<li>所有NIKEiD定制</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuFirstLine"></div>
+								<ul class="headerBottomUlBoyCenFirstMenu">
+									<li>男子定制</li>
+									<li>所有男子定制</li>
+									<li>休闲</li>
+									<li>篮球</li>
+									<li>跑步</li>
+									<li>足球</li>
+									<li>滑板</li>
+									<li>健身</li>
+								</ul>
+								<ul class="headerBottomUlBoyCenSecondMenu">
+									<li>女子定制</li>
+									<li>所有女子定制</li>
+									<li>休闲</li>
+									<li>跑步</li>
+									<li>训练</li>
+									<li>篮球</li>
+									<li>足球</li>
+									<li>滑板</li>
+								</ul>
+								<div class="headerBottomUlBoyMenuSecondLine"></div>
+								<ul class="headerBottomUlBoySportFirstMenu">
+									<li>儿童定制</li>
+									<li>所有儿童定制</li>
+									<li>男童</li>
+									<li>女童</li>
+									<li>婴童</li>
+								</ul>
+								<ul class="headerBottomUlBoySportSecondMenu">
+									<li>FLYKNIT</li>
+									<li>Air Max系列定制</li>
+									<li>宽掌系列定制</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li><a href="">流行潮品</a></li>
+				</ul>
+				<div id="" class="headerBottomInput">
+					<input class="input" id="searchInput" type="text" value="" placeholder="搜索"/>
+				</div>
+			</div>
+		</header>
+		
+		<div class="nav">
+			<ul calss="navUl">
+				<li><a href="#">新品上市</a></li><span>|</span>
+				<li><a href="#">鞋类</a></li><span>|</span>
+				<li><a href="#">服饰</a></li><span>|</span>
+				<li><a href="#">女子</a></li><span>|</span>
+				<li><a href="#">儿童</a></li><span>|</span>
+				<li><a href="#">冬季新款</a></li><span>|</span>
+				<li><a href="#">AIR.Jordan Blong</a></li>
+			</ul>
+		</div>
+		
+		<div class="banner"></div>
+		
+		<div class="cny">
+			<h1>CNY系列</h1>
+			<p>灵感源自中国传统元素的拼接图案，融合东方美学与潮流灵感，</p>
+			<p>为中国传统新年全面绽放。</p>
+			<a href="#">将于1月3日发售</a>
+			<div class="shopMore">
+				<span>闪耀全场</span>
+				<a class="shopMores" href="#">选购更多</a>
+			</div>
+			<div class="commodity">
+				<div class="commodityShop">
+					<a href="#"><img src="img/commodity01.png"/></a>
+					<span>JORDAN SUPER.FLY MVP PF</span>
+					<span>男子篮球鞋</span>
+				</div>
+				<div class="commodityShop">
+					<a href="#"><img src="img/commodity01.png"/></a>
+					<span>JORDAN SUPER.FLY MVP PF</span>
+					<span>男子篮球鞋</span>
+				</div>
+				<div class="commodityShop">
+					<a href="#"><img src="img/commodity01.png"/></a>
+					<span>JORDAN SUPER.FLY MVP PF</span>
+					<span>男子篮球鞋</span>
+				</div>
+				<div class="commodityShop">
+					<a href="#"><img src="img/commodity01.png"/></a>
+					<span>JORDAN SUPER.FLY MVP PF</span>
+					<span>男子篮球鞋</span>
+				</div>
+				<div class="commodityShop">
+					<a href="#"><img src="img/commodity01.png"/></a>
+					<span>JORDAN SUPER.FLY MVP PF</span>
+					<span>男子篮球鞋</span>
+				</div>
+				<div class="commodityShop">
+					<a href="#"><img src="img/commodity01.png"/></a>
+					<span>JORDAN SUPER.FLY MVP PF</span>
+					<span>男子篮球鞋</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="exhibition">
+			<a href="#"><img src="img/04.png"/></a>
+			<a href="#"><img src="img/05.png"/></a>
+		</div>
+		
+		<div class="airJordan">
+			<h1>AIR JORDAN XXXIII</h1>
+			<h1>'郭艾伦球员版'</h1>
+			<p>革命性 FastFit 系统，出众的包裹性，<br/>让运动员随时准备“蓄势起飞”。</p>
+			<a class="chooseShop" href="#">立即选购</a>
+		</div>
+		
+		<div class="airJordanImg">
+			<div class="airJordanImgLeft">
+				<a class="airJordanImgGirl" href="#"><img src="img/06.png" alt="" /></a>
+				<h1>JORDAN 女子</h1>
+				<p>全新女子专属设计，从新颖鞋款到时尚上衣。<br/>足以让她炫酷一整季。</p>
+				<a class="airJordanImgChoose" href="#">
+					选购女子
+					<div class="airJordanImgLeftLine"></div>
+				</a>
+			</div>
+			<div class="airJordanImgRight">
+				<a class="airJordanImgBoy" href="#"><img src="img/07.png"/></a>
+				<h1>精选服饰系列</h1>
+				<p>多样选择，多种体验，<br/>搭配出属于你的时尚街头风范</p>
+				<a class="airJordanImgChoose" href="#">
+					立即选购
+					<div class="airJordanImgRightLine"></div>
+				</a>
+			</div>
+		</div>
+		
+		<div class="kind">
+			<p>整装翱翔</p>
+			<div class="kindChoose">
+				<div class="kindChooseLeft">
+					<a class="kindChooseLeftImg" href="#"><img src="img/08.png"/></a>
+					<h3>AIR JORDAN 系列</h3>
+					<p>无论是球场鏖战还是行走街头，<br/>球场到日常休闲，塑就瞩目潮流风范。</p>
+				</div>
+				<div class="kindChooseLeft">
+					<a class="kindChooseLeftImg" href="#"><img src="img/08.png"/></a>
+					<h3>AIR JORDAN 系列</h3>
+					<p>无论是球场鏖战还是行走街头，<br/>球场到日常休闲，塑就瞩目潮流风范。</p>
+				</div>
+				<div class="kindChooseLeft">
+					<a class="kindChooseLeftImg" href="#"><img src="img/08.png"/></a>
+					<h3>AIR JORDAN 系列</h3>
+					<p>无论是球场鏖战还是行走街头，<br/>球场到日常休闲，塑就瞩目潮流风范。</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="jorDanWhyNotZer">
+			<h3>JORDAN WHY NOT ZER0.1 CHAOS PF</h3>
+			<p>- 合成材质和织物组合鞋面，稳固双足</p>
+			<p>- 全掌型 Zoom Air 气垫，造就出色的回弹缓震表现</p>
+			<p>- 模压泡棉后跟包裹设计，塑就稳定支撑力</p>
+			<p>- 经久耐穿的橡胶外底，提供可驾驭多种地面的强劲抓地力</p>
+			<a class="purchase" href="#">立即购买</a>
+		</div>
+		
+		<div class="airStory">
+			<p>走进 AIR blog，探索产品幕后的故事</p>
+			<a class="airStoryExplore" href="#">探索AIR</a>
+			<div id="" class="airStoryShop">
+				<div class="airStoryShopKind">
+					<a class="airStoryShopKindImg" href="#"><img src="img/09.PNG"/></a>
+					<h3>球鞋背后的故事更打动我</h3>
+					<p>中文说唱选手黄旭将自己所爱继续传承</p>
+				</div>
+				<div class="airStoryShopKind">
+					<a class="airStoryShopKindImg" href="#"><img src="img/09.PNG"/></a>
+					<h3>球鞋背后的故事更打动我</h3>
+					<p>中文说唱选手黄旭将自己所爱继续传承</p>
+				</div>
+				<div class="airStoryShopKind">
+					<a class="airStoryShopKindImg" href="#"><img src="img/09.PNG"/></a>
+					<h3>球鞋背后的故事更打动我</h3>
+					<p>中文说唱选手黄旭将自己所爱继续传承</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="airExplore">
+			<p>探索 JORDAN</p>
+			<div class="airExploreKind">
+				<div class="airExploreDiv">
+					<a class="airExploreA" href="#"><img src="img/11.PNG"/></a>
+				</div>
+				<div class="airExploreDiv">
+					<a class="airExploreA" href="#"><img src="img/11.PNG"/></a>
+				</div>
+				<div class="airExploreDiv">
+					<a class="airExploreA" href="#"><img src="img/11.PNG"/></a>
+				</div>
+				<div class="airExploreDiv">
+					<a class="airExploreA" href="#"><img src="img/11.PNG"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="qrCode">
+			<img class="qrCodeImg" src="img/13.png" alt="" />
+			<div class="qrCodeLine"></div>
+			<div class="qrCodeMenu">
+				<div class="qrCodeMenuUl">
+					<p class="">JORDAN鞋类</p>
+					<ul class="qrCodeMenuShoes">
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+					</ul>
+					<a class="qrCodeMenuUlAdd" href="#">+</a>
+					<div class="qrCodeMenuLine"></div>
+				</div>
+				<div class="qrCodeMenuUl">
+					<p class="">JORDAN鞋类</p>
+					<ul class="qrCodeMenuShoes">
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+					</ul>
+					<a class="qrCodeMenuUlAdd" href="#">+</a>
+					<div class="qrCodeMenuLine"></div>
+				</div>
+				<div class="qrCodeMenuUl">
+					<p class="">JORDAN鞋类</p>
+					<ul class="qrCodeMenuShoes">
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+					</ul>
+					<a class="qrCodeMenuUlAdd" href="#">+</a>
+					<div class="qrCodeMenuLine"></div>
+				</div>
+				<div class="qrCodeMenuUl lastUL">
+					<p class="">JORDAN鞋类</p>
+					<ul class="qrCodeMenuShoes">
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+						<li><a href="#">所有JORDAN鞋类</a></li>
+					</ul>
+					<a class="qrCodeMenuUlAdd" href="#">+</a>
+					<div class="qrCodeMenuLine"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footerDiv">
+				<ul class="footerDivLi">
+					<li><a href="#">电子礼品卡</a></li>
+					<li><a href="#">附近商店</a></li>
+					<li><a href="#">订阅电子邮件</a></li>
+					<li><a href="#">注册NIKE会员</a></li>
+					<li><a href="#">网站反馈</a></li>
+				</ul>
+				<ul class="footerDivUl">
+					<li><a href="#">获取帮助</a></li>
+					<li><a href="#">订单状态</a></li>
+					<li><a href="#">配送方式</a></li>
+					<li><a href="#">退换货</a></li>
+					<li><a href="#">付款选项</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				<ul class="footerDivLastUl">
+					<li><a href="#">关于NIKE</a></li>
+					<li><a href="#">新闻</a></li>
+					<li><a href="#">投资者</a></li>
+					<li><a href="#">招纳贤士</a></li>
+					<li><a href="#">新品展览</a></li>
+					<li><a href="#">企业团购</a></li>
+				</ul>
+				<a class="weChat" href="#"><img src="img/14.png"/></a>
+				<div class="footerDivLine"></div>
+				<div class="footerDivBottom">
+					<i class="iconfont icon-guoqi"></i>
+					<a class="footerDivBottomGq" href="">中国大陆</a>
+					<span class="footerDivBottomSpan">© 2019 Nike, Inc. 保留所有权利</span>
+					<ul class="footerDivBottomUl">
+						<li><a href="#">分类浏览</a></li>
+						<li><a href="#">使用条款</a></li>
+						<li><a href="#">销售条款</a></li>
+						<li><a href="#">隐私条款</a></li>
+						<li><a href="#">沪ICP备14009339号</a></li>
+						<li><a href="#"><img src="img/15.png"/>上海工商</a></li>
+						<li><a href="#"><img src="img/16.png"/>沪公网安备31011002000177号</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

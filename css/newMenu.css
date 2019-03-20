@@ -1,0 +1,751 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+ul li{
+	list-style: none;
+}
+html body{
+	height: 100%;
+}
+header{
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: 999;
+}
+.bgColor{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background : black;
+	opacity : 0.3;
+	display: none;
+	z-index: 3;
+}
+.errorSpan{
+	position: absolute;
+	left: 45px;
+	top: 140px;
+	color: red;
+	font-size: 12px;
+	display: none;
+}
+.login{
+	display: none;
+	position: absolute;
+	width : 500px;
+	height : 550px;
+	left : 0;
+	right : 0;
+	top : 0;
+	bottom : 0;
+	margin : auto;
+	background : white;
+	border-radius : 5px;
+	background-image : url("../img/login.png");
+	background-repeat : no-repeat;
+	background-position : 130px  30px;
+	z-index: 4;
+}
+.userInput{
+	background: white;
+	margin: 0 auto;
+    height: 200px;
+    width: 410px;
+    margin-top: 190px;
+}
+.userInputSpan{
+	position: absolute;
+    top: 0px;
+    width: 54px;
+    height: 21px;
+	padding: 10px 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px 0 0 5px ;
+	background: #efefef;
+	text-align: center;
+}
+.loginDiv{
+	position: absolute;
+	top: 159px;
+	left: 44px;
+	width: 409px;
+	height: 43px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}
+.userNum{
+	height: 41px;
+	width: 331px;
+    margin-left: 76px;
+	border: 1px solid #e5e5e5;
+	border-radius: 0 5px 5px 0;
+	font-size: 16px;
+}
+.loginSpan{
+	position: absolute;
+	display: none;
+    left: 45px;
+    top: 215px;
+	font-size: 12px;
+	color: red;
+}
+.userPaw{
+	height: 42px;
+    width: 408px;
+    margin-top: 55px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.tipSpan{
+	position: absolute;
+	display: none;
+    left: 45px;
+    top: 300px;
+	font-size: 12px;
+	color: red;
+}
+.quit{
+	position : absolute;
+	width : 20px;
+	height : 20px;
+	top : 10px;
+	right : 10px;
+	background-image : url("../img/icon.png");
+	background-size : 20px 20px;
+}
+.emailSpan{
+	position: absolute;
+	top: 330px;
+	left: 45px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #8d8d8d;
+}
+.emailSpan:hover{
+	color: #ce1126;
+}
+.entry{
+	position: absolute;
+	top: 355px;
+	left: 45px;
+	width: 410px;
+	height: 30px;
+}
+.saveEntry{
+	width: 20px;
+	height: 32px;
+	border-radius: 3px;
+}
+.saveEntrySpan{
+	position: absolute;
+	top: 5px;
+	left: 30px;
+	font-size: 14px;
+	color: #8d8d8d;
+}
+.pawForget{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	font-size: 14px;
+	color: #bcbcbc;
+}
+.condition{
+	width: 410px;
+	height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+	color: #8d8d8d;
+}
+.condition a{
+	color: #8d8d8d;
+	text-decoration: underline;
+}
+.condition a:hover{
+	color: #ce1126;
+}
+.btnLogin{
+	display: block;
+	width: 300px;
+	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 12px;
+	padding: 12px 70px;
+	background: black;
+	color: white;
+}
+.vip{
+	width: 410px;
+	height: 10px;
+	margin: 0 auto;
+	text-align: center;
+	color: #8d8d8d;
+	font-size: 12px;
+	margin-top: 25px;
+}
+.vip a{
+	color: #8d8d8d;
+	text-decoration: underline;
+}
+.register{
+	display: none;
+	position: absolute;
+	width : 500px;
+	height : 550px;
+	left : 0;
+	right : 0;
+	top : 0;
+	bottom : 0;
+	margin : auto;
+	background : white;
+	border-radius : 5px;
+	background-image : url("../img/12.png");
+	background-repeat : no-repeat;
+	background-position : 80px  30px;
+	z-index: 4;
+}
+.registerInputImg{
+	position: absolute;
+	top: 40px;
+	left: 80px;
+}
+.userPawSpan{
+	top: 250px;
+}
+.sendMassage{
+	position: absolute;
+	top: 170px;
+	left: 40px;
+	width: 410px;
+	height: 30px;
+	text-align: center;
+	color: #8d8d8d;
+}
+.registerInput{
+	background: white;
+	margin: 0 auto;
+    height: 200px;
+    width: 410px;
+    padding-top: 250px;
+}
+.pawInput{
+	position: absolute;
+	top: -47px;
+}
+.registerInput span:nth-child(2){
+	top:250px
+}
+.registerPawDiv{
+	width: 410px;
+	position: absolute;
+	top: 300px;
+	left: 45px;
+}
+.country{
+	height: 42px;
+    width: 410px;
+    margin-top: 65px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.btnRegister{
+	display: block;
+	width: 270px;
+	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: -24px;
+	padding: 12px 70px;
+	background: black;
+	color: white;
+}
+.vipRegister{
+	width: 410px;
+	height: 10px;
+	margin: 0 auto;
+	text-align: center;
+	color: #8d8d8d;
+	font-size: 12px;
+	margin-top: 25px;
+}
+.vipRegister a{
+	color: #8d8d8d;
+	text-decoration: underline;
+}
+	
+.headerTop{
+	display: flex;
+	z-index: 999;
+	align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+    height: 39px;
+}
+.headerTop a{
+	padding: 0 32px;
+	align-items: center;
+	border-right: 1px solid #E5E5E5;
+	height: 39px;
+	line-height: 39px;
+}
+.headerTop a:hover{
+	color: #000;
+}
+.headerTop a:nth-child(2):hover{
+	color: red;
+}
+.headerTop .NikePlusImg img{
+	margin: 5px;
+}
+.headerTop .NikePlus{
+	font-size: 12px;
+	color: #8D8D8D
+}
+.headerTop .NikePlusTop{
+	color: #8D8D8D;
+	font-weight: 600;
+	font-size: 12px;
+}
+.headerUl{
+	height: 39px;
+	margin-left: 790px;
+}
+.headerUl .headerUlLi span{
+	text-align: center;
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #8D8D8D;
+	line-height: 39px;
+}
+.headerUl .headerUlLi span:nth-child(2){
+	width: 46px;
+	margin-left: 30px;
+}
+.headerUl .headerUlLi span:nth-child(3){
+	/*width: 46px;*/
+	margin-left: 8px;
+}
+.headerUl .headerUlLi span:nth-child(4){
+	/*width: 46px;*/
+	margin-left: 20px;
+	color: red;
+}
+.headerUl .headerUlLi span:hover{
+	color: #000;
+	cursor: pointer;
+}
+.headerUl .headerUlLi span:nth-child(2):hover{
+	border-bottom: 2px solid black;
+}
+.headerBottom{
+	height: 68px;
+	border-bottom: 1px solid #E5E5E5;
+	display: flex;
+	position: relative;
+}
+.headerBottom .icon a{
+	padding-left: 25px;
+	display: block;
+	width: 100px;
+	height: 68px;
+}
+.headerBottomUl{
+	display: flex;
+	text-align: center;
+	padding-left: 170px;
+	height: 68px;
+}
+.headerBottomUl li{
+	width: 100px;
+	white-space: nowrap;
+	padding: 0 20px;
+}
+.headerBottomUl li a{
+	color: #000;
+	display: block;
+	height: 66px;
+	line-height: 68px;
+	white-space: nowrap;
+}
+.headerBottomUl li a:hover{
+	border-bottom: 2px solid #000;
+}
+.headerBottomUl li a:hover .headerBottomUlBoyMenu{
+	display: block;
+}
+.headerBottomUlBoyMenu{
+	display: none;
+	height: 500px;
+	width: 100%;
+	margin-top: 1px;
+	background: white;
+	position: absolute;
+	left: 0;
+	/*background-image: url(../img/icon.png);*/
+}
+.headerBottomUlBoyMenu .headerBottomUlBoyLeftMenu{
+	float: left;
+	margin-left: 340px;
+	margin-top: 60px;
+	text-align: left;
+}
+.headerBottomUlBoyMenu ul li{
+	line-height: 35px;
+}
+.headerBottomUlBoyMenu ul li:hover{
+	color: gray;
+}
+.headerBottomUlBoyMenuFirstLine{
+	width: 1px;
+	height: 400px;
+	margin-top: 50px;
+	background: gray;
+    margin-left: 550px;
+}
+.headerBottomUlBoyCenFirstMenu{
+    float: left;
+    margin-left: 590px;
+    margin-top: -390px;
+	text-align: left;
+}
+.headerBottomUlBoyCenFirstMenu li:nth-child(1){
+	font-size: 20px;
+}
+.headerBottomUlBoyCenSecondMenu{
+    float: left;
+    margin-left: 800px;
+    margin-top: -390px;
+	text-align: left;
+}
+.headerBottomUlBoyCenSecondMenu li:nth-child(1){
+	font-size: 20px;
+}
+.headerBottomUlBoyMenuSecondLine{
+	float: left;
+    width: 1px;
+    height: 400px;
+    margin-top: -400px;
+    background: gray;
+    margin-left: 990px;
+}
+.headerBottomUlBoySportFirstMenu{
+	float: left;
+	margin-left: 1000px;
+	margin-top: -390px;
+	text-align: left;
+}
+.headerBottomUlBoySportFirstMenu li:nth-child(1){
+	font-size: 20px;
+}
+.headerBottomUlBoySportSecondMenu{
+	float: left;
+	margin-left: 1140px;
+	margin-top: -390px;
+	text-align: left;
+}
+.headerBottomUlBoySportSecondMenu li:nth-child(1){
+	font-size: 20px;
+}
+.headerBottom .input{
+	width: 200px;
+	height: 40px;
+	margin-top: 12px;
+	box-shadow: 3px 0px 1px gray;
+	font-size: 16px;
+    margin-left: 150px;
+}
+.menu{
+	width: 100%;
+	position: absolute;
+	top: 135px;
+}
+.leftMenu{
+	width: 216px;
+	/*background: yellow;*/
+	position: absolute;
+	margin-top: 16px;
+	left: 10px;
+	padding: 24px;
+}
+.newBoy{
+	font-size: 24px;
+	/*margin-top: 63px;*/
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 20px;
+}
+.newBoyMenu{
+	font-size: 13px;
+	margin-top: 20px;
+}
+.newBoyMenu a{
+	display: block;
+	color: #333;
+	margin-bottom: 8px;
+}
+.newBoyMenu a:hover{
+	color: #8d8d8d;
+}
+.filter{
+	font-size: 24px;
+	margin-top: 40px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 20px;
+}
+.sport{
+	margin-top: 20px;
+	font-size: 13px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 20px;
+}
+.sportTop{
+	font-size: 15px;
+	cursor: pointer;
+}
+.sportTopSpan{
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.sportMenu{
+	margin-top: 10px;
+}
+.square{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+}
+.sportMenu a{
+	display: flex;
+	color: #333;
+	margin-bottom: 8px;
+}
+.square{
+	margin-right: 10px;
+}
+.sportMenuSpan{
+	margin-left: 20px;
+	cursor: pointer;
+}
+.sportMenuSpan:hover{
+	color: #8d8d8d;
+}
+.sportMenu a:hover{
+	color: #8d8d8d;
+}
+.niked{
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	border-bottom: 2px solid #e5e5e5;
+	padding-bottom: 20px;
+	color: #333;
+}
+.nikedSpan{
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.suitable{
+	margin-top: 20px;
+	font-size: 14px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+	color: #333;
+	cursor: pointer;
+}
+.suitableSpan{
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.suitableMenu{
+	margin-top: 10px;
+}
+.suitableMenu a{
+	display: flex;
+	color: #333;
+	margin-bottom: 8px;
+	font-size: 13px;
+}
+.suitableMenu a:hover{
+	color: #8d8d8d;
+}
+.brand{
+	margin-top: 20px;
+	font-size: 14px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+	color: #333;
+	cursor: pointer;
+}
+.brandSpan{
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.brandMenu{
+	margin-top: 10px;
+}
+.brandMenu a{
+	display: flex;
+	color: #333;
+	margin-bottom: 8px;
+	font-size: 13px;
+}
+.brandMenu a:hover{
+	color: #8d8d8d;
+}
+.changeColor{
+	margin-top: 20px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 80px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.changeColorMenu{
+	/*display: flex;*/
+}
+.changeColorMenu a{
+	width: 23px;
+	height: 23px;
+	display: block;
+	float: left;
+	border: 1px solid #e5e5e5;
+	border-radius: 50%;
+	background: white;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+.changeColorMenu a:nth-child(2){
+	background: #e5e5e5;
+}
+.changeColorMenu a:nth-child(3){
+	background: #ebe1be;
+}
+.changeColorMenu a:nth-child(4){
+	background: #fed533;
+}
+.changeColorMenu a:nth-child(5){
+	background: #daaf00;
+}
+.changeColorMenu a:nth-child(6){
+	background: #f36b26;
+}
+.changeColorMenu a:nth-child(8){
+	background: #7bba3c;
+}
+.changeColorMenu a:nth-child(9){
+	background: #1790c8;
+}
+.changeColorMenu a:nth-child(10){
+	background: #d82a90;
+}
+.changeColorMenu a:nth-child(11){
+	background: #7f7f00;
+}
+.changeColorMenu a:nth-child(12){
+	background: #e7352b;
+}
+.changeColorMenu a:nth-child(13){
+	background: #8d429f;
+}
+.changeColorMenu a:nth-child(15){
+	background: #777878;
+}
+.changeColorMenu a:nth-child(16){
+	background: #825d41;
+}
+.changeColorMenu a:nth-child(17){
+	background: #111111;
+}
+.changeColorMenu a:nth-child(18){
+	background: #fbf4d9;
+}
+.changeColorMenu a:nth-child(19){
+	background: #e7352b;
+}
+.rightMenu{
+	margin-left: 299px;
+	margin-top: 46px;
+	margin-bottom: 50px;
+}
+.rightMenuTop{
+	padding: 0 30px 20px 0;
+}
+.rightMenuTop h1{
+	color: #111;
+	font-size: 24px;
+	font-weight: 500;
+	margin-top: -5px;
+	cursor: pointer;
+}
+.rightMenuTopHSpan{
+	color: #999;
+}
+.rightMenuTopSpan{
+	/*display: block;*/
+	position: absolute;
+	top: 35px;
+	left: 1090px;
+	padding: 8px 35px;
+	border: 1px solid #e5e5e5;
+	color: #111;
+	font-size: 15px;
+	cursor: pointer;
+}
+.rightMenuBottom{
+	overflow: hidden;
+}
+.rightMenuBottomShopIn{
+	margin: 0 auto;
+	padding: 10px;
+	text-align: left;
+}
+.rightMenuBottomShop{
+	width: 244px;
+	padding-top: 13px;
+	padding-bottom: 4px;
+	/*border: 1px solid #ccc;*/
+	float: left;
+}
+.commodity{
+	overflow: hidden;
+}
+.commodityColor{
+	margin-top: 5px;
+	margin-bottom: 3px;
+	font-size: 13px;
+	width: 220px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.commodityPrice{
+	font-size: 12px;
+	color: #666;
+}
+.commodityPrice{
+	cursor: pointer;
+}
+.commodityPrice p:nth-child(1){
+	color: #333333;
+	font-weight: 600;
+}
+.commodityPrice span{
+	cursor: pointer;
+}
+
+
